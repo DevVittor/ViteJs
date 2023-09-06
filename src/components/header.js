@@ -8,7 +8,7 @@ export function header(element){
         <button class='
         bg-[#212121] pr-[20px] pl-[20px] pt-[5px] pb-[5px] rounded-[3px] text-white
         font-medium
-        '>Entrar</button>
+        ' id='login'>Entrar</button>
         <button 
         class='
         bg-red-500 text-white pr-[20px] pl-[20px] pt-[5px] pb-[5px] rounded-[3px]
@@ -19,6 +19,34 @@ export function header(element){
         pr-[20px] pl-[20px] pt-[5px] pb-[5px] rounded-[3px] border-[1px] border-[#ddd]
         '><i class="text-black fa-solid fa-bars"></i></button>
     </div>
+        <div class='shadow-lg h-auto w-auto absolute hidden border-[1px] border-gray-100 bg-white rounded-[3px] p-3 top-[70px] right-[240px]' id='divLogin'>
+        <div class=' w-full text-right'>
+            <button id='closed'><i class="text-red-500 text-[20px] fa-solid fa-circle-xmark"></i></button>
+        </div>    
+        <div class='flex flex-col gap-2'>
+                <h2 class='font-medium text-[20px]'>Fazer Login:</h2>
+                <input class='pr-[10px] pl-[10px] pt-[5px] pb-[5px] outline-none border-[1px] border-gray-100 rounded-[3px]' type='email' name='' placeholder='Email' />
+                <input class='pr-[10px] pl-[10px] pt-[5px] pb-[5px] outline-none border-[1px] border-gray-100 rounded-[3px]' type='password' name='' placeholder='****' />
+                <input class='bg-black text-white rounded-[3px] text-[16px] font-semibold pt-[5px] pb-[5px] mt-[5px]' type='submit' value='Entrar'/>
+            </div>
+        </div>
 </div>
     `
+
+    const btnLogin = document.getElementById('login')
+    const divLogin = document.getElementById('divLogin')
+    const btnClosed = document.getElementById('closed')
+
+    btnLogin.addEventListener('click',abrir)
+    btnClosed.addEventListener('click',fechar)
+
+    function abrir(){
+        divLogin.classList.toggle('visible')
+        divLogin.classList.toggle('hidden')
+    }
+
+    function fechar(){
+        divLogin.classList.toggle('hidden')
+    }
+
 }
