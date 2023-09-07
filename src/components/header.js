@@ -1,6 +1,6 @@
 export function header(element){
     element.innerHTML = `
-    <div class="flex items-center justify-between 2xl:flex-row md:flex-row flex-col bg-white border-b-[1px] border-[#ddd] pr-[50px] pl-[50px] pt-[10px] 2xl:pb-[10px] md:pb-[10px] pb-[20px]">
+    <div class="flex items-center justify-between 2xl:flex-row md:flex-row flex-col bg-white border-b-[1px] border-[#ddd] 2xl:pr-[50px] 2xl:pl-[50px] 2xl:pt-[10px] 2xl:pb-[10px] md:pr-[50px] md:pl-[50px] md:pt-[10px] md:pb-[10px] md:pb-[10px] pb-[20px]">
     <div class="">
         <a class='font-semibold text-[40px]' href="/"><h1>ABRIME</h1></a>
     </div>
@@ -19,7 +19,7 @@ export function header(element){
         pr-[20px] pl-[20px] pt-[5px] pb-[5px] rounded-[3px] border-[1px] border-[#ddd]
         '><i class="text-black fa-solid fa-bars"></i></button>
     </div>
-        <div class='shadow-lg h-auto w-auto absolute hidden border-[1px] border-gray-100 bg-white rounded-[3px] p-3 top-[70px] right-[240px]' id='divLogin'>
+        <div class='shadow-lg h-auto w-auto absolute hidden border-[1px] border-gray-100 bg-white rounded-[3px] p-3 2xl:top-[70px] 2xl:right-[240px] md:right-[220px] md:top-[70px] top-[105px]' id='divLogin'>
         <div class=' w-full text-right'>
             <button id='closed'><i class="text-red-500 text-[20px] fa-solid fa-circle-xmark"></i></button>
         </div>    
