@@ -161,7 +161,7 @@ export function loadingCard(){
             for (let i = 0; i < 24; i++) {
                 if (count < Foto.length) {
                     let img = document.createElement('img');
-                    img.className = 'w-[233px] h-[350px] object-cover';
+                    img.className = 'w-[233px] h-[350px] object-cover pointer-events-none';
                     img.setAttribute('data-src', Foto[count]);
                     img.setAttribute('data-loaded', 'false');
                     img.alt = 'imagem';
