@@ -1,4 +1,4 @@
-import {loadingCard} from '../../public/js/code.js'
+import {loadingCard} from '/code.js'
 export const inicio = (element)=>{
     element.innerHTML=`
         <section>
@@ -23,7 +23,7 @@ export const inicio = (element)=>{
             </div>
         </section>
         <section>
-            <div class="flex flex-row justify-start flex-wrap gap-1 p-1 w-auto" id='imageContainer'></div>
+            <div class='flex flex-row justify-start flex-wrap gap-1 p-1 w-full' id='imageContainer'></div>
         </section>
     `
 

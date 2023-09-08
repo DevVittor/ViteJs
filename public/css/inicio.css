@@ -1,4 +1,6 @@
-.container-card{
-    display: grid;
-    
+.card{
+    height: 350px;
+    width: 233px;
+    pointer-events: none;
+    object-fit: cover;
 }
