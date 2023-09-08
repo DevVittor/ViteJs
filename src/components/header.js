@@ -1,6 +1,6 @@
 export function header(element){
     element.innerHTML = `
-    <div class="flex items-center justify-between 2xl:flex-row md:flex-row flex-col bg-white border-b-[1px] border-[#ddd] 2xl:pr-[50px] 2xl:pl-[50px] 2xl:pt-[10px] 2xl:pb-[10px] md:pr-[50px] md:pl-[50px] md:pt-[10px] md:pb-[10px] md:pb-[10px] pb-[20px]">
+    <div class="flex items-center justify-between 2xl:flex-row md:flex-row flex-col bg-white border-b-[1px] border-[#ddd] 2xl:pr-[50px] 2xl:pl-[50px] 2xl:pt-[10px] 2xl:pb-[10px] md:pr-[50px] md:pl-[50px] md:pt-[10px] md:pb-[10px] pb-[20px]">
     <div class="">
         <a class='font-semibold text-[40px]' href="/"><h1>ABRIME</h1></a>
     </div>
