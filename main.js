@@ -11,4 +11,3 @@ document.querySelector('#app').innerHTML = `
 header(document.getElementById('menu'))
 inicio(document.getElementById('root'))
 footer(document.getElementById('rodape'))
-setupCounter(document.querySelector('#counter'))

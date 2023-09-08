@@ -1,3 +1,4 @@
+import {loadingCard} from '../../public/js/code.js'
 export const inicio = (element)=>{
     element.innerHTML=`
     <section>
@@ -25,106 +26,9 @@ export const inicio = (element)=>{
             </div>
         </section>
         <section>
-            <div class="m-auto w-full 2xl:columns-7 lg:columns-4 md:columns-3 gap-3 p-3">
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-                <div class="mb-2.5 break-inside-avoid">
-                    <img
-                    class="w-full rounded-xl object-cover"
-                    src="https://images.pexels.com/photos/2180858/pexels-photo-2180858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="imagem"
-                    />
-                </div>
-            </div>
+            <div class="flex flex-row justify-start flex-wrap gap-1 p-1 w-auto" id='imageContainer'></div>
         </section>
     `
+
+loadingCard(document.getElementById('imageContainer'));
 }
