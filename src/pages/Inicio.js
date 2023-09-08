@@ -1,9 +1,6 @@
 import {loadingCard} from '../../public/js/code.js'
 export const inicio = (element)=>{
     element.innerHTML=`
-    <section>
-        
-    </section>
         <section>
             <div class="flex items-center justify-between pr-[10px] pl-[10px] pb-[10px] pt-[20px]">
                 <div class="">
